@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<com.example.day01.AutoView
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    app:layout_constraintLeft_toRightOf="parent"
+    app:layout_constraintRight_toLeftOf="parent"
+    android:visibility="gone"/>
+    <com.example.day01.Rview
+        android:id="@+id/r"
+        android:layout_width="400dp"
+        android:layout_height="400dp" />
+    <com.example.day01.RingView
+        android:id="@+id/ring"
+        android:layout_width="310dp"
+        android:layout_height="310dp" />
+</android.support.constraint.ConstraintLayout>

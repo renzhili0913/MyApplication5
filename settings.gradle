@@ -1,1 +1,1 @@
-include ':app', ':library', ':xListView', ':renzhili20181123', ':day1127', ':day1'
+include ':library', ':xListView', ':renzhili20181123', ':day1127', ':day1', ':day01_register', ':renzhili20181128', ':day01', ':pillar', ':renzhili20181129', ':text', ':flowlayout', ':app', ':switchbutton', ':ballviewdemo'

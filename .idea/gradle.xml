@@ -9,10 +9,19 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/ballviewdemo" />
+            <option value="$PROJECT_DIR$/day01" />
+            <option value="$PROJECT_DIR$/day01_register" />
             <option value="$PROJECT_DIR$/day1" />
             <option value="$PROJECT_DIR$/day1127" />
+            <option value="$PROJECT_DIR$/flowlayout" />
             <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/pillar" />
             <option value="$PROJECT_DIR$/renzhili20181123" />
+            <option value="$PROJECT_DIR$/renzhili20181128" />
+            <option value="$PROJECT_DIR$/renzhili20181129" />
+            <option value="$PROJECT_DIR$/switchbutton" />
+            <option value="$PROJECT_DIR$/text" />
             <option value="$PROJECT_DIR$/xListView" />
           </set>
         </option>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.administrator.myapplication5">
+    package="com.bawei.myapplication">
 
     <application
         android:allowBackup="true"
@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".sector_graph.SectorGraphActivity" />
+        <activity android:name=".turntable.TurntableActivity" />
+        <activity android:name=".switch_button.SwitchButtonActivity" />
+        <activity android:name=".random.RandomActivity" />
+        <activity android:name=".waterfall.WaterFallActivity"></activity>
     </application>
 
 </manifest>

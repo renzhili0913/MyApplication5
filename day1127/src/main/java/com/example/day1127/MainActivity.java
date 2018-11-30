@@ -3,17 +3,17 @@ package com.example.day1127;
 
 import android.content.Context;
 import android.graphics.Paint;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.example.bean.UserBean;
 import com.example.utils.NetUtils;
 import com.youth.banner.Banner;
 
-import com.youth.banner.BannerConfig;
 import com.youth.banner.loader.ImageLoaderInterface;
 
 import java.util.ArrayList;
@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void displayImage(Context context, Object path, ImageView imageView) {
                // UserBean.DataBean benner = (UserBean.DataBean) path;
-
                 com.nostra13.universalimageloader.core.ImageLoader.getInstance().displayImage((String)path,imageView);
             }
 
@@ -72,13 +71,17 @@ public class MainActivity extends AppCompatActivity {
         NetUtils.getInsanner().getRequery(url, UserBean.class, new NetUtils.CallBack<UserBean>() {
             @Override
             public void onsuccess(UserBean o) {
-              //  List<String>list = new ArrayList<>();
+                if (o==null){
+                    Toast.makeText(MainActivity.this,"请求失败",Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 String images = o.getData().getImages();
                /* String[] split = images.split("\\|");
                 for (String s:split
                      ) {
-                    list.add(s);
+                    image.add(s);
                 }*/
+               //截取字符串
                 sub(o.getData().getImages());
                 //设置图片集合
                 banner.setImages(image);
