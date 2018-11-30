@@ -3,9 +3,9 @@ package com.example.bean;
 public class UserBean {
     private String msg;
     private String code;
-
+    private String i="0";
     public boolean isSuccess(){
-        return code.equals("0");
+        return code.equals(i);
     }
     public String getMsg() {
         return msg;
